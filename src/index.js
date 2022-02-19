@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import CombinedRoutes from "./CombinedRoutes";
+import {BrowserRouter as Router} from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // <React.StrictMode>
+	<Router>
+		<CombinedRoutes/>
+	</Router>
+
+  // {/*</React.StrictMode>*/}
+	,
   document.getElementById('root')
 );
 
